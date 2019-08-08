@@ -2,7 +2,7 @@
 - hosts: local
   tasks:
     - name: "test awx api"
-      shell: cd /home/miaoaijun/ansible_test/test190716;ls
+      shell: cd ~;ls
       register: ls_result
     - debug:
         msg: result {{ ls_result }}
