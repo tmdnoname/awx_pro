@@ -2,7 +2,7 @@
 - hosts: all
   tasks:
     - name: "test awx api"
-      shell: cd ~;ls
+      shell: cd {{ cd_dir }};ls
       register: ls_result
     - debug:
         msg: result {{ ls_result }}
